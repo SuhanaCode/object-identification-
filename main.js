@@ -43,7 +43,7 @@ function draw(){
       b = random(255);
 
       fill(r , g , b);
-      percent = floor(objects[1].confidence * 100);
+      percent = floor(objects[i].confidence * 100);
       text(objects[i].label + " " + percent + "%" + objects[i].x + 15 , objects[i].y + 15);
       noFill();
       stroke(r , g , b);
